@@ -1,12 +1,11 @@
 import random
-import math
 def run_game():
-  r=int(input("guess a random number"))
+  r=int(input("Guess a random number : "))
   n=random.randint(1,9)
   if n == r:
-    print("guessed the correct number the number was",n)
+    print("Guessed the correct number the number was",n)
   else:
-    print("you guessed the wrong number the number was",n)
+    print("You guessed the wrong number the number was",n )
 def main():
   run_game()
   play_again()
@@ -17,7 +16,7 @@ def play_again():
         if retry == "yes":
             main()
         if retry == "no":
-          #just crashes the code
+          #Just crashes the code
             exit()
         else:
             print("I'm sorry I could not recognize what you entered")
